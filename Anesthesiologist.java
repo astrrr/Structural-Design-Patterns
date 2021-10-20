@@ -2,6 +2,7 @@
 package edu.parinya.softarchdesign.structural;
 
 public class Anesthesiologist extends HealthcareWorker {
+
     public Anesthesiologist(String name, double price) {
         super(name, price);
     }
