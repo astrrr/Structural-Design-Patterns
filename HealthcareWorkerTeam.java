@@ -7,20 +7,20 @@ public class HealthcareWorkerTeam implements HealthcareServiceable {
     Set<HealthcareServiceable> members;
 
     public HealthcareWorkerTeam(Set<HealthcareServiceable> members) {
-        members = new LinkedHashSet<>();
+        members = new LinkedHashSet<HealthcareServiceable>();
 
     }
 
 
     public HealthcareWorkerTeam() {
-        members = new LinkedHashSet<>();
+        members = new LinkedHashSet<HealthcareServiceable>();
     }
 
-    public void  addMember(HealthcareWorker worker){
+    public void  addMember(HealthcareServiceable worker){
         members.add(worker);
     }
 
-    public void removeMember(HealthcareWorker worker){
+    public void removeMember(HealthcareServiceable worker){
         members.remove(worker);
     }
 
